@@ -92,7 +92,7 @@
                             <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
                         </div>
                         <div class="col-sm-12">
-                            <textarea class="form-control" rows="10" cols="20" placeholder="Message"></textarea>
+                            <textarea class="form-control" rows="10" placeholder="Message"></textarea>
                         </div>
                         <div class="col-sm-10">
                             <button type="submit" class="btn ">Submit</button>
@@ -212,6 +212,32 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script>
+
+    (function ($) {
+        $.support.placeholder = ('placeholder' in document.createElement('input'));
+    })(jQuery);
+
+
+    //fix for IE7 and IE8
+    $(function () {
+        if (!$.support.placeholder) {
+            $("[placeholder]").focus(function () {
+                if ($(this).val() == $(this).attr("placeholder")) $(this).val("");
+            }).blur(function () {
+                if ($(this).val() == "") $(this).val($(this).attr("placeholder"));
+            }).blur();
+
+            $("[placeholder]").parents("form").submit(function () {
+                $(this).find('[placeholder]').each(function() {
+                    if ($(this).val() == $(this).attr("placeholder")) {
+                        $(this).val("");
+                    }
+                });
+            });
+        }
+    });
+</script>
 </body>
 </html>
 
