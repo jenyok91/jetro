@@ -89,6 +89,8 @@
 	font: 16px "Bebas", Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 	color:#b9b9b9;
+    line-height: 68px;
+    padding: 10px 0 0 26px;
 }
 
 .navbar-nav>li>a:hover{
@@ -96,9 +98,7 @@
 	color:#e8603c;
 	transition: color .3s ease-in;
 }
-.navbar-nav>li>a:last-child{
-	padding-right:0;
-}
+
 .carousel-inner>.item>img,
 .carousel-inner>.item>a>img {
 	line-height: 1;
@@ -106,8 +106,16 @@
 }
 .jt-slider .glyphicon{
 	text-shadow:none;
-	font-size: 52px;
-	margin-top:-50px;
+	font-size: 55px;
+	margin-top:-46px;
+}
+.jt-slider .glyphicon-chevron-left{
+    position: absolute;
+    left: 25%;
+}
+.jt-slider .glyphicon-chevron-right{
+    position: absolute;
+    right: 25%;
 }
 .jt-slider img{
 	max-width:100%;
@@ -122,16 +130,16 @@
 	color:#fff;
 	background: rgba(232, 102, 60, 0.8);
 	position: absolute;
-	left:36px;
-	bottom:31px;
-	padding: 2px 20px 15px 20px;
-	width: 45%;
+    left: 4%;
+    bottom: 6%;
+    padding: 0 0 13px 18px;
+    width: 44%;
 	text-align: left;
 	text-shadow: none;
 }
 .carousel-caption h2{
 	font: 18px "Bebas", Arial, Helvetica, sans-serif;
-
+    line-height: 31px;
 }
 .carousel-caption p{
 	font-size: 12px;
@@ -152,19 +160,23 @@
 	text-transform: uppercase;
 	color:#e8663c;
 	margin-left:70px;
-	line-height: 1.5;
-	width: 60%;
-	margin-top: 0;
+	line-height: 24px;
+	word-spacing: 3px;
 }
 
 .jt-features p{
 	color:#414141;
+    line-height: 18px;
+    font-size: 12px;
+    padding: 0 22px 0 3px;
 }
 .jt-features .jt-title img{
 	float:left;
 }
 .jt-features .jt-title{
-	margin-bottom:38px;
+	margin-bottom:33px;
+    height: 46px;
+    line-height: 46px;
 
 }
 .btn{
@@ -172,9 +184,10 @@
 	color:#fff;
 	background: #e8663c;
 	border:none;
-	margin-top: 22px;
-	margin-bottom: 20px;
+	margin-top: 6px;
 	text-transform: uppercase;
+    font-size: 12px;
+
 }
 .btn:hover{
 	background: #FF6A40;
@@ -185,13 +198,15 @@
 }
 /*Recent Works*/
 .jt-recent{
-    margin-top: 45px;
+    margin-top: 12px;
 }
 .jt-recent h2{
     font: 18px "Bebas", Arial, Helvetica, sans-serif;
     color:#e8663c;
     text-transform: uppercase;
-    padding-right: 21px;
+    padding:0 0 0 2px;
+    word-spacing: 3px;
+    margin-top: 31px;
 }
 .jt-recent .jt-works{
     background-image:url("../img/line.png");
@@ -203,7 +218,7 @@
 	padding-right: 21px;
 }
 .jt-recent-items{
-    margin-top: 24px;
+    margin-top: 12px;
 }
 .jt-recent-items img{
     display: block;
@@ -220,6 +235,8 @@
     font: 16px "Bebas", Arial, Helvetica, sans-serif;
     color:#b9b9b9;
     background-color: #fff;
+    word-spacing: -1px;
+    line-height: 0;
 }
 .jt-recent-items p{
     font: 11px "Bebas", Arial, Helvetica, sans-serif;
@@ -269,6 +286,44 @@
 }
 .jt-footer .jt-about,.jt-twitter{
     margin-right: 76px;
+}
+.jt-footer .jt-footer-about h1{
+    padding: 16px 0 0 25px;
+    line-height: 23px;
+    word-spacing: 2px;
+}
+.jt-footer .jt-footer-about-text{
+    padding: 15px 0 0 24px;
+    line-height: 14px;
+}
+.jt-footer .jt-footer-about-text2{
+    padding: 6px 0 0 25px;
+    line-height: 14px;
+}
+.jt-footer .jt-footer-twitter h1{
+    padding: 14px 0 0 36px;
+    word-spacing: 2px;
+}
+.jt-footer .jt-footer-twitter p{
+    padding: 13px 22px 0 36px;
+    line-height: 15px;
+}
+.jt-footer .jt-footer-twitter .jt-footer-time{
+    padding: 0 0 0 37px;
+    line-height: 4px;
+}
+.jt-footer .jt-footer-contact h1{
+    padding: 14px 0 0 9px;
+    word-spacing: 1px;
+}
+.jt-footer .jt-footer-contact-text{
+    padding: 14px 12px 0 9px;
+}
+.jt-footer .jt-footer-contact-email{
+    padding: 5px 0 0 9px;
+}
+.jt-footer .jt-footer-contact-tel{
+    padding: 14px 12px 0 9px;
 }
 
 /*------------------Page About us---------------------*/
@@ -347,7 +402,6 @@ h4.jt-works {
 .jt-works span {
     padding: 2px 18px 0 0;
     background: #fff;
-    font-size: 16px;
     line-height: 1.1;
 }
 .sidebar-module .row img{
