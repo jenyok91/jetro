@@ -587,6 +587,9 @@ textarea:-ms-input-placeholder{color:#e8603c !important;}
 .jt-blog-carousel{
     border-left:10px solid #fff;
 }
+.row{
+    margin-top: 10px;
+}
 .jt-carousel:before{
     content: '';
     position:absolute;
@@ -777,4 +780,3 @@ textarea:-ms-input-placeholder{color:#e8603c !important;}
     transform: translateX(-50%) scale(1);
     opacity: 1;
 }
-
