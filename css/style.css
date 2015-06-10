@@ -327,6 +327,9 @@
 }
 
 /*------------------Page About us---------------------*/
+.jt-about{
+    margin-top: 18px;
+}
 .jt-header{
     background: #ff6633;
     height: 60px;
@@ -336,15 +339,41 @@
 .jt-header h1 {
     color: #fff;
     font: 24px "Bebas", Arial, Helvetica, sans-serif;
-    margin: 20px;
+    line-height: 10px;
+    word-spacing: 3px;
+    margin-top: 27px;
+    margin-left: 8px;
+}
+.jt-about-content p.jt-about-img-content{
+    padding-top: 10px;
+    padding-right: 36px;
+    line-height: 18px;
+}
+.jt-about-content p.jt-about-middle-content{
+    padding-top: 9px;
+    padding-right: 22px;
+    line-height: 18px;
+}
+.jt-about-content p.jt-about-quisque-content{
+    padding-top: 9px;
+    padding-right: 24px;
+    line-height: 18px;
+}
+.jt-about-content p{
+    font-size: 12px;
+    line-height: 15px;
+    padding-top: 12px;
+    padding-right: 25px;
 }
 .jt-about-content img {
     float: left;
     padding: 2px;
     border: 1px solid #ccc;
-    margin-right: 20px;
+    margin-right: 23px;
+    margin-top: 13px;
 }
-.jt-big-letter::first-letter {
+
+.jt-about-content p.jt-big-letter::first-letter {
     color: #e8603c;
     font-size: 36px;
     float: left;
@@ -368,11 +397,13 @@
     background-color: #effeb9;
     border-color: #98c601;
     color: #98c601;
+    margin:24px 0;
 }
 .alert-danger {
     background-color: #fbcbc1;
     border-color: #eb5439;
     color: #eb5439;
+    margin: -12px 0 12px;
 }
 .alert-warning {
     background-color: #ffe9ad;
@@ -383,21 +414,67 @@
     background-color: #d1e4f3;
     border-color: #4d8fcb;
     color: #4d8fcb;
-    margin-bottom: 23px;
+    margin-bottom: -20px;
 }
 blockquote{
     font-size: 15px;
     font-style: italic;
-    padding: 0 0 0 20px;
-    margin-left: 55px;
+    padding: 17px 0 0 17px;
+    margin-left: 51px;
     border-left: 8px solid #e8603c;
+}
+blockquote p{
+    line-height: 15px;
+    padding-top: 12px;
+}
+.jt-about-col-cont{
+    padding:7px 0 0 8px;
+}
+.jt-about-col-cont p{
+    line-height: 18px;
+}
+.jt-about-col2-cont{
+    padding:6px 7px 0 3px;
+}
+.jt-about-col2-cont p{
+    line-height: 18px;
+}
+.jt-about-lit-col p{
+    padding: 12px 3px 0 0;
+    line-height: 18px;
+}
+.jt-about-lit-col2 {
+    margin-left: -10px;
+}
+.jt-about-lit-col2 p{
+    padding: 13px 3px 0 0;
+    line-height: 18px;
 }
 h4.jt-works {
     background: url('../img/line.png') 50% 50%;
     background-repeat: repeat-x;
     height: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     line-height: 15px;
+    padding-left: 2px;
+    word-spacing: 2px;
+}
+.jt-categories{
+    margin-top: 34px;
+}
+.jt-categories .jt-list{
+    padding-left:1px;
+    line-height: 14px;
+    font-size: 12px;
+    list-style: none;
+}
+.jt-photo-gallery{
+    margin-top: 35px;
+}
+.sidebar-module p{
+    font-size: 12px;
+    line-height: 14px;
+    padding-left: 1px;
 }
 .jt-works span {
     padding: 2px 18px 0 0;
