@@ -92,9 +92,9 @@ a:hover{
 	text-transform: uppercase;
 	color:#b9b9b9;
 }
-/*.navbar-nav>li.active>a{*/
-    /*color:#e8603c;*/
-/*}*/
+.navbar-nav>li.active>a{
+color:#e8603c;
+}
 .navbar-nav>li>a:hover{
 	background: none;
 	color:#e8603c;
